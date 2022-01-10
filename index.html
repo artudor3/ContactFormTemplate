@@ -18,7 +18,7 @@
     <div class="container">
         <h1>Contact Form Template</h1>
         <div class="p-3 border border-2 rounded-3 shadow-lg bg-light">
-            <form name="contactForm" netlify class="row g-3 p-2">
+            <form name="contactForm" netlify data-netlify-recaptcha="true" class="row g-3 p-2">
                 <div class="col12">
                     <div class="row">
                         <div class="col-12 col-md-6 form-group">
@@ -57,13 +57,26 @@
                             <label class="form-label">How did you hear about us?</label>
                             <div class="form-check form-check-inline">
                                 <label for="inputFunnel" class="form-check-label">Radio</label>
-                                <input type="checkbox" value="radio" class="form-check-input" name="funnel">                                
+                                <input type="checkbox" value="radio" class="form-check-input" name="funnel">
                             </div>
-                            <div class="form-check form-check-inline form-check-inline">
+                            <div class="form-check form-check-inline">
                                 <label for="inputFunnel" class="form-check-label">Print</label>
                                 <input type="checkbox" value="print" class="form-check-input" name="funnel">
                             </div>
+                            <div class="form-check form-check-inline">
+                                <label for="inputFunnel" class="form-check-label">Website</label>
+                                <input type="checkbox" value="website" class="form-check-input" name="funnel">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="inputFunnel" class="form-check-label">Flyer</label>
+                                <input type="checkbox" value="flyer" class="form-check-input" name="funnel">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="inputFunnel" class="form-check-label">Other</label>
+                                <input type="checkbox" value="other" class="form-check-input" name="funnel">
+                            </div>
                         </div>
+                        <div data-netlify-recaptcha="true"></div>
                         <div class="col-12 d-flex justify-content-center pt-2">
                             <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                         </div>
